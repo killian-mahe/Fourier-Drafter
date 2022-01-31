@@ -12,4 +12,4 @@ Thanks to the [Discret Fourier Transform](https://en.wikipedia.org/wiki/Discrete
 1. Download or clone the repository.
 2. Launch the `index.html` file in your favorite browser !
 
-or you can just go to the [demo page](http://fourier.killianmahe.shareyourproject.fr/) !
+or you can just go to the [demo page](https://fourier.shareyourproject.fr/) !
