@@ -17,14 +17,58 @@
 
         body {
             margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         canvas {
             background-color: #273746;
+            border: 5px solid goldenrod;
+            width: 800px;
+            height: 500px;
+        }
+
+        h1 {
+            font-size: 4rem;
+            font-weight: bolder;
+        }
+
+        p {
+            font-size: 1rem;
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: goldenrod;
+            position: relative;
+            font-weight: 900;
+        }
+
+        a::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            height: 3px;
+            background-color: goldenrod;
+            width: 0;
+            transition: ease-in-out 150ms;
+        }
+
+        a:hover::after {
+            width: 100%;
+        }
+
+        #credits {
+            margin-top: 8rem;
+            font-size: 0.9rem;
+            text-align: center;
         }
     </style>
 
-    <title>FourierJS</title>
+    <title>Fourier JS</title>
 </head>
 <body>
 
@@ -32,6 +76,16 @@
 
     <canvas id="canvas"></canvas>
     
+    <p>
+        Fourier JS is a little project base on the work of Joseph Fourier. <br/>
+        Thanks to the <a href="https://en.wikipedia.org/wiki/Discrete_Fourier_transform">Discret Fourier Transform (DFT)</a>, the app is able to transform a 2D drawing into a sum of periodic signals.
+    </p>
+
+    <div id="credits">
+        This app has been made with <span style="padding: 0 2px 0 2px;">❤️</span> by <a href="https://github.com/killian-mahe">Killian Mahé</a>.<br>
+        The code is avaible on <a href="https://github.com/killian-mahe/Fourier-Drafter">GitHub</a>.
+    </div>
+
 </body>
 <script src="src/sketch.js"></script>
 <script src="src/fourier.js"></script>
